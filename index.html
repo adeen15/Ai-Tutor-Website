@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor — The Magical AI Learning Universe for Kids</title>
+    <meta name="description" content="Safe. Smart. Magical. Meet the AI Tutor that grows with your child. 5 animated AI teachers, personalized lessons, quizzes, certificates & more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">AI <span class="logo-highlight">Tutor</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#characters">Teachers</a></li>
+            <li><a href="#adventure">Adventure Map</a></li>
+            <li><a href="#parents">For Parents</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-cta-group">
+            <a href="../2nd gemini app.html" class="btn-nav-ghost">Open App</a>
+            <a href="#hero" class="btn-nav-cta">Start Free ✨</a>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="nav-mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#characters">Teachers</a>
+        <a href="#adventure">Adventure Map</a>
+        <a href="#parents">For Parents</a>
+        <a href="#pricing">Pricing</a>
+        <a href="../2nd gemini app.html" class="mobile-cta">Open App →</a>
+    </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="hero" class="hero-section">
+
+    <!-- Background FX -->
+    <div class="hero-bg"></div>
+    <div class="hero-clouds">
+        <div class="cloud cloud-1">☁️</div>
+        <div class="cloud cloud-2">☁️</div>
+        <div class="cloud cloud-3">☁️</div>
+        <div class="cloud cloud-4">☁️</div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="hero-particles" id="heroParticles">
+        <span class="fp fp-1">⭐</span>
+        <span class="fp fp-2">💰</span>
+        <span class="fp fp-3">✨</span>
+        <span class="fp fp-4">🏆</span>
+        <span class="fp fp-5">⭐</span>
+        <span class="fp fp-6">💎</span>
+        <span class="fp fp-7">✨</span>
+        <span class="fp fp-8">💰</span>
+        <span class="fp fp-9">⭐</span>
+        <span class="fp fp-10">🌟</span>
+    </div>
+
+    <div class="hero-content">
+        <!-- 3D Rotating Character Universe -->
+        <div class="hero-universe" id="heroUniverse">
+            <div class="universe-core" id="universeCore">
+                <div class="char-glow-ring"></div>
+                <div class="hero-char-display" id="heroCharDisplay">🦖</div>
+                <div class="char-shadow"></div>
+                <div class="char-orbit-ring">
+                    <span class="orbit-char oc-1">🐵</span>
+                    <span class="orbit-char oc-2">👾</span>
+                    <span class="orbit-char oc-3">🐱</span>
+                    <span class="orbit-char oc-4">🐝</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="hero-text">
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt"></i> Kid-Safe AI &nbsp;·&nbsp; <i class="fas fa-star"></i> 50,000+ Students
+            </div>
+            <h1 class="hero-headline">
+                Meet the AI Tutor That<br>
+                <span class="hero-highlight">Grows With</span> Your Child
+            </h1>
+            <p class="hero-sub">Safe. Smart. <span class="magic-word">Magical.</span></p>
+            <p class="hero-body">5 animated AI teachers. Personalized lessons. Real quizzes. Certificates.<br>All wrapped in a world your child will never want to leave.</p>
+            <div class="hero-btns">
+                <a href="../2nd gemini app.html" class="btn-hero-primary">
+                    <i class="fas fa-rocket"></i> Open App Free
+                </a>
+                <a href="#parents" class="btn-hero-secondary">
+                    <i class="fas fa-user-shield"></i> For Parents
+                </a>
+                <a href="#demo" class="btn-hero-ghost">
+                    <i class="fas fa-play-circle"></i> Try a Demo
+                </a>
+            </div>
+            <div class="hero-social-proof">
+                <div class="proof-avatars">
+                    <span>🧑‍🎓</span><span>👦</span><span>👧</span><span>🧒</span><span>👶</span>
+                </div>
+                <p><strong>12,400+</strong> kids learned something new today</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+    </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<section class="stats-bar">
+    <div class="stats-inner">
+        <div class="stat-item">
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Happy Students</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">AI Teachers</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="95">0</div>
+            <div class="stat-label">% Love Rate</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="30">0</div>
+            <div class="stat-label">Day Learning Path</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CHARACTERS SECTION ===== -->
+<section id="characters" class="section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">🎭 Meet Your Teachers</span>
+            <h2>5 Magical AI Friends,<br>Each a <span class="text-gradient">World-Class Expert</span></h2>
+            <p>Each character has a unique personality, voice, and subject — making learning feel like an adventure, not a chore.</p>
+        </div>
+
+        <div class="chars-grid">
+            <!-- Professor Dino -->
+            <div class="char-card" data-accent="#f59e0b" data-char="dino" style="--card-accent: #f59e0b; --card-bg: linear-gradient(135deg, #fff9c4, #ffecb3)">
+                <div class="char-card-glow"></div>
+                <div class="char-emoji-wrap">
+                    <div class="char-emoji">🦖</div>
+                    <div class="char-orbit-mini">
+                        <span>📚</span><span>🏛️</span><span>🗺️</span>
+                    </div>
+                </div>
+                <div class="char-badge free-badge">FREE</div>
+                <h3 class="char-name">Professor Dino</h3>
+                <div class="char-subject"><i class="fas fa-landmark"></i> History</div>
+                <p class="char-desc">"Rawr! Let me take you back in time to meet pharaohs, knights and ancient wonders!"</p>
+                <div class="char-topics">
+                    <span>Pyramids 🏜️</span>
+                    <span>Mummies 🤕</span>
+                    <span>Kings 👑</span>
+                </div>
+                <div class="char-stats">
+                    <div class="cstat"><i class="fas fa-star"></i> 4.9</div>
+                    <div class="cstat"><i class="fas fa-users"></i> 18k+ kids</div>
+                </div>
+            </div>
+
+            <!-- Milo Monkey -->
+            <div class="char-card" data-accent="#0369a1" data-char="milo" style="--card-accent: #0369a1; --card-bg: linear-gradient(135deg, #e0f2fe, #bae6fd)">
+                <div class="char-card-glow"></div>
+                <div class="char-emoji-wrap">
+                    <div class="char-emoji">🐵</div>
+                    <div class="char-orbit-mini">
+                        <span>🍌</span><span>➕</span><span>🔢</span>
+                    </div>
+                </div>
+                <div class="char-badge premium-badge">PREMIUM</div>
+                <h3 class="char-name">Milo Monkey</h3>
+                <div class="char-subject" style="color:#0369a1"><i class="fas fa-calculator"></i> Maths</div>
+                <p class="char-desc">"Ooh ooh ah ah! Let's count bananas and solve puzzles together!"</p>
+                <div class="char-topics">
+                    <span>Counting 🔢</span>
+                    <span>Shapes 🔵</span>
+                    <span>Adding ➕</span>
+                </div>
+                <div class="char-stats">
+                    <div class="cstat"><i class="fas fa-star"></i> 4.8</div>
+                    <div class="cstat"><i class="fas fa-users"></i> 12k+ kids</div>
+                </div>
+            </div>
+
+            <!-- Starry Alien -->
+            <div class="char-card featured-char" data-accent="#9333ea" data-char="alien" style="--card-accent: #9333ea; --card-bg: linear-gradient(135deg, #f3e8ff, #e9d5ff)">
+                <div class="char-card-glow"></div>
+                <div class="char-featured-badge">⭐ POPULAR</div>
+                <div class="char-emoji-wrap">
+                    <div class="char-emoji">👾</div>
+                    <div class="char-orbit-mini">
+                        <span>🪐</span><span>🛸</span><span>🌌</span>
+                    </div>
+                </div>
+                <div class="char-badge premium-badge">PREMIUM</div>
+                <h3 class="char-name">Starry Alien</h3>
+                <div class="char-subject" style="color:#9333ea"><i class="fas fa-rocket"></i> Space Exploration</div>
+                <p class="char-desc">"Greetings Earthling! The universe has 2 trillion galaxies. Let's explore them!"</p>
+                <div class="char-topics">
+                    <span>Planets 🪐</span>
+                    <span>Black Holes 🕳️</span>
+                    <span>Stars ⭐</span>
+                </div>
+                <div class="char-stats">
+                    <div class="cstat"><i class="fas fa-star"></i> 5.0</div>
+                    <div class="cstat"><i class="fas fa-users"></i> 22k+ kids</div>
+                </div>
+            </div>
+
+            <!-- Magic Cat -->
+            <div class="char-card" data-accent="#db2777" data-char="cat" style="--card-accent: #db2777; --card-bg: linear-gradient(135deg, #fce7f3, #fbcfe8)">
+                <div class="char-card-glow"></div>
+                <div class="char-emoji-wrap">
+                    <div class="char-emoji">🐱</div>
+                    <div class="char-orbit-mini">
+                        <span>🧪</span><span>🧲</span><span>⚗️</span>
+                    </div>
+                </div>
+                <div class="char-badge premium-badge">PREMIUM</div>
+                <h3 class="char-name">Magic Cat</h3>
+                <div class="char-subject" style="color:#db2777"><i class="fas fa-flask"></i> Science</div>
+                <p class="char-desc">"Meow! Why does ice melt? Why do magnets stick? Science is purr-fect magic!"</p>
+                <div class="char-topics">
+                    <span>Magnets 🧲</span>
+                    <span>Ice & Water 🧊</span>
+                    <span>Plants 🌱</span>
+                </div>
+                <div class="char-stats">
+                    <div class="cstat"><i class="fas fa-star"></i> 4.9</div>
+                    <div class="cstat"><i class="fas fa-users"></i> 9k+ kids</div>
+                </div>
+            </div>
+
+            <!-- Bouncy Bee -->
+            <div class="char-card" data-accent="#854d0e" data-char="bee" style="--card-accent: #854d0e; --card-bg: linear-gradient(135deg, #fef9c3, #fef08a)">
+                <div class="char-card-glow"></div>
+                <div class="char-emoji-wrap">
+                    <div class="char-emoji">🐝</div>
+                    <div class="char-orbit-mini">
+                        <span>🌸</span><span>🍯</span><span>🌳</span>
+                    </div>
+                </div>
+                <div class="char-badge premium-badge">PREMIUM</div>
+                <h3 class="char-name">Bouncy Bee</h3>
+                <div class="char-subject" style="color:#854d0e"><i class="fas fa-leaf"></i> Nature</div>
+                <p class="char-desc">"Buzz buzz! Why is the sky blue? How do flowers grow? Nature is always buzzing!"</p>
+                <div class="char-topics">
+                    <span>Honey 🍯</span>
+                    <span>Flowers 🌸</span>
+                    <span>Sky ☁️</span>
+                </div>
+                <div class="char-stats">
+                    <div class="cstat"><i class="fas fa-star"></i> 4.7</div>
+                    <div class="cstat"><i class="fas fa-users"></i> 7k+ kids</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== LIVE DEMO SECTION ===== -->
+<section id="demo" class="demo-section section-pad">
+    <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">🎮 Try It Now</span>
+            <h2>No Sign-Up Needed.<br><span class="text-gradient-light">Play a Real Lesson.</span></h2>
+            <p>Pick a teacher and answer a real question — just like in the app!</p>
+        </div>
+
+        <!-- Character Selector -->
+        <div class="demo-char-selector">
+            <button class="demo-char-btn active" data-char="dino" onclick="selectDemoChar('dino')">
+                <span>🦖</span> Prof. Dino
+            </button>
+            <button class="demo-char-btn" data-char="milo" onclick="selectDemoChar('milo')">
+                <span>🐵</span> Milo
+            </button>
+            <button class="demo-char-btn" data-char="alien" onclick="selectDemoChar('alien')">
+                <span>👾</span> Starry
+            </button>
+            <button class="demo-char-btn" data-char="cat" onclick="selectDemoChar('cat')">
+                <span>🐱</span> Magic Cat
+            </button>
+            <button class="demo-char-btn" data-char="bee" onclick="selectDemoChar('bee')">
+                <span>🐝</span> Bouncy Bee
+            </button>
+        </div>
+
+        <!-- Demo Quiz Box -->
+        <div class="demo-quiz-box" id="demoQuizBox">
+            <div class="demo-hud">
+                <div class="demo-hud-item">
+                    <span>💰</span> <span id="demoCoins">0</span> Coins
+                </div>
+                <div class="demo-hud-item">
+                    <span>⭐</span> <span id="demoXP">0</span> XP
+                </div>
+                <div class="demo-hud-item">
+                    <span>🔥</span> <span id="demoStreak">1</span> Streak
+                </div>
+                <div class="demo-hud-item">
+                    <span>❓</span> Q <span id="demoQNum">1</span>/3
+                </div>
+            </div>
+
+            <div class="demo-char-speaking">
+                <div class="demo-char-icon" id="demoCharIcon">🦖</div>
+                <div class="demo-speech-bubble" id="demoSpeechBubble">
+                    <span class="demo-char-name-tag" id="demoCharNameTag">Professor Dino says:</span>
+                    <p id="demoQuestion">Who built the famous Great Pyramids?</p>
+                </div>
+            </div>
+
+            <div class="demo-options" id="demoOptions">
+                <button class="demo-opt" onclick="checkDemoAnswer(this, 0)">The Romans 🏛️</button>
+                <button class="demo-opt correct-opt" onclick="checkDemoAnswer(this, 1)">The Ancient Egyptians 🏜️</button>
+                <button class="demo-opt" onclick="checkDemoAnswer(this, 2)">The Vikings ⚔️</button>
+            </div>
+
+            <div class="demo-result" id="demoResult" style="display:none">
+                <div class="result-icon" id="resultIcon">✅</div>
+                <div class="result-text" id="resultText">Correct! Amazing!</div>
+                <div class="result-coins" id="resultCoins">+20 Coins &nbsp; +10 XP</div>
+                <button class="btn-next-q" onclick="nextDemoQuestion()">Next Question →</button>
+            </div>
+
+            <div class="demo-complete" id="demoComplete" style="display:none">
+                <div class="complete-emoji">🎉</div>
+                <h3>Lesson Complete!</h3>
+                <p>You answered 3 questions and earned <strong id="totalCoins">60</strong> coins!</p>
+                <div class="complete-badges">
+                    <span>🏆 Quiz Wizard</span>
+                    <span>🔍 Curious Explorer</span>
+                </div>
+                <button class="btn-try-app" onclick="window.open('../2nd gemini app.html')">
+                    Open Full App 🚀
+                </button>
+                <button class="btn-retry" onclick="resetDemo()">Try Again ↺</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FEATURES SECTION ===== -->
+<section id="features" class="section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">✨ Everything Your Child Needs</span>
+            <h2>Not Just an App.<br> A <span class="text-gradient">Magical Learning Universe.</span></h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feat-card" style="--fc: #8b5cf6">
+                <div class="feat-icon">🌟</div>
+                <h3>Age-Based AI Learning</h3>
+                <p>Answers automatically adjust for ages 4–13. Simpler for young kids, deeper for older ones — powered by AI.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #0ea5e9">
+                <div class="feat-icon">🧠</div>
+                <h3>Spaced Repetition</h3>
+                <p>Missed a question yesterday? The AI remembers and reviews it with your child today — scientifically proven.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #f59e0b">
+                <div class="feat-icon">🎓</div>
+                <h3>Printable Certificates</h3>
+                <p>Complete a learning path and print a beautiful personalized certificate your child can hang on their wall.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #ec4899">
+                <div class="feat-icon">🎁</div>
+                <h3>Daily Gift Rewards</h3>
+                <p>Every day your child logs in, they get a mystery gift — coins, badges, or special effects!</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #f97316">
+                <div class="feat-icon">🏆</div>
+                <h3>Weekly Leaderboard</h3>
+                <p>Anonymous weekly rankings that reset each Monday — healthy competition without pressure or personal data.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #10b981">
+                <div class="feat-icon">🔒</div>
+                <h3>Parent Portal & PIN</h3>
+                <p>PIN-protected parent dashboard with learning logs, emotional insights, screen time limits, and reports.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #db2777">
+                <div class="feat-icon">📖</div>
+                <h3>AI Story Mode</h3>
+                <p>Get a custom AI-generated story based on the current subject. Then answer comprehension questions to earn coins.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #6366f1">
+                <div class="feat-icon">📷</div>
+                <h3>Vision Learning</h3>
+                <p>Take a photo of homework, a drawing, or a book page and your AI teacher will explain it instantly.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #0369a1">
+                <div class="feat-icon">🪄</div>
+                <h3>Magic Auras Shop</h3>
+                <p>Spend earned coins to unlock sparkles, glows, fireflies and star orbits that surround your character.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #9333ea">
+                <div class="feat-icon">📕</div>
+                <h3>Sticker Book</h3>
+                <p>6 collectible achievement badges — Curious Explorer, Quiz Wizard, Word Smith, Coin Collector and more!</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #f59e0b">
+                <div class="feat-icon">🗺️</div>
+                <h3>Adventure Map</h3>
+                <p>A 30-day visual learning path with levels, quizzes and certificates — your child's personal journey to mastery.</p>
+                <div class="feat-glow"></div>
+            </div>
+            <div class="feat-card" style="--fc: #ef4444">
+                <div class="feat-icon">🔥</div>
+                <h3>Streaks & XP</h3>
+                <p>Daily learning streaks with a streak freeze to protect the chain. XP levels from Beginner → Intermediate → Advanced.</p>
+                <div class="feat-glow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ADVENTURE MAP SECTION ===== -->
+<section id="adventure" class="adventure-section section-pad">
+    <div class="container">
+        <div class="section-header light">
+            <span class="section-tag">🗺️ The Adventure Map</span>
+            <h2>A 30-Day Journey<br><span class="text-gradient-light">From First Question to First Achievement</span></h2>
+            <p>Your child's unique learning path — a story-driven 30-day adventure that no other app offers.</p>
+        </div>
+
+        <div class="adventure-map-wrap">
+            <div class="adv-bg-deco">
+                <span class="adv-planet adv-p1">🪐</span>
+                <span class="adv-planet adv-p2">🌕</span>
+                <span class="adv-planet adv-p3">⭐</span>
+                <span class="adv-planet adv-p4">🌟</span>
+                <span class="adv-planet adv-p5">🌈</span>
+            </div>
+
+            <div class="adv-path">
+                <div class="adv-node complete" style="left:8%; top:75%">
+                    <div class="adv-node-icon">🥚</div>
+                    <div class="adv-node-label">Day 1<br>Start!</div>
+                </div>
+                <div class="adv-node complete" style="left:22%; top:60%">
+                    <div class="adv-node-icon">📚</div>
+                    <div class="adv-node-label">Day 5<br>Alphabets</div>
+                </div>
+                <div class="adv-node complete" style="left:37%; top:42%">
+                    <div class="adv-node-icon">🏆</div>
+                    <div class="adv-node-label">Day 10<br>First Quiz!</div>
+                </div>
+                <div class="adv-node active" style="left:53%; top:30%">
+                    <div class="adv-node-icon">🦖</div>
+                    <div class="adv-node-label">Day 15<br>History!</div>
+                    <div class="adv-pulse"></div>
+                </div>
+                <div class="adv-node locked" style="left:68%; top:20%">
+                    <div class="adv-node-icon">🔒</div>
+                    <div class="adv-node-label">Day 20<br>Science</div>
+                </div>
+                <div class="adv-node locked" style="left:83%; top:12%">
+                    <div class="adv-node-icon">🔒</div>
+                    <div class="adv-node-label">Day 30<br>🎓 Graduate!</div>
+                </div>
+
+                <!-- Connecting Path Line -->
+                <svg class="adv-path-line" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                    <path d="M 80 225 Q 200 210 220 180 Q 330 120 370 126 Q 430 90 530 90 Q 620 70 680 60 Q 780 40 830 36" 
+                          fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="6" stroke-dasharray="12 8"/>
+                    <path id="advProgressPath" d="M 80 225 Q 200 210 220 180 Q 330 120 370 126 Q 430 90 530 90" 
+                          fill="none" stroke="url(#advGrad)" stroke-width="8"/>
+                    <defs>
+                        <linearGradient id="advGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#fbbf24"/>
+                            <stop offset="100%" style="stop-color:#a78bfa"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+                <!-- Traveling Character -->
+                <div class="adv-traveler">🦖</div>
+            </div>
+
+            <div class="adv-legend">
+                <div class="adv-leg-item"><span class="adv-dot complete-dot"></span> Completed</div>
+                <div class="adv-leg-item"><span class="adv-dot active-dot"></span> Current</div>
+                <div class="adv-leg-item"><span class="adv-dot locked-dot"></span> Locked</div>
+            </div>
+
+            <div class="adv-stats-row">
+                <div class="adv-stat">
+                    <div class="adv-stat-num">Day 15/30</div>
+                    <div class="adv-stat-lab">Progress</div>
+                </div>
+                <div class="adv-stat">
+                    <div class="adv-stat-num">3 Badges</div>
+                    <div class="adv-stat-lab">Earned</div>
+                </div>
+                <div class="adv-stat">
+                    <div class="adv-stat-num">450 XP</div>
+                    <div class="adv-stat-lab">Total</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-section section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">🚀 How It Works</span>
+            <h2>Start in <span class="text-gradient">60 Seconds</span></h2>
+        </div>
+        <div class="how-steps">
+            <div class="how-step">
+                <div class="how-num">01</div>
+                <div class="how-icon">👨‍👩‍👧</div>
+                <h3>Parent Signs Up Securely</h3>
+                <p>Solve a quick math puzzle (Parental Gate) to protect your child's sign-up. No data sold. Ever.</p>
+            </div>
+            <div class="how-connector"><i class="fas fa-arrow-right"></i></div>
+            <div class="how-step">
+                <div class="how-num">02</div>
+                <div class="how-icon">🎭</div>
+                <h3>Child Picks a Teacher</h3>
+                <p>Choose from 5 animated AI characters. Each one has a unique voice, personality, and subject.</p>
+            </div>
+            <div class="how-connector"><i class="fas fa-arrow-right"></i></div>
+            <div class="how-step">
+                <div class="how-num">03</div>
+                <div class="how-icon">🏆</div>
+                <h3>Learn, Quiz & Earn!</h3>
+                <p>Ask questions, take quizzes, earn coins, unlock badges, build streaks — and grow every single day.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PARENT TRUST SECTION ===== -->
+<section id="parents" class="parents-section section-pad">
+    <div class="container">
+        <div class="parents-grid">
+            <div class="parents-text">
+                <span class="section-tag">🛡️ For Parents</span>
+                <h2>Built For <span class="text-gradient">Safety First</span></h2>
+                <p class="parents-intro">We built this app knowing that parents are the gatekeepers. Every feature was designed with your peace of mind as the top priority.</p>
+
+                <div class="safety-list">
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#dcfce7; color:#16a34a">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Parental Gate</h4>
+                            <p>A math problem only an adult can solve must be passed before any sign-up. COPPA & GDPR-K compliant.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#dbeafe; color:#1d4ed8">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div>
+                            <h4>PIN-Protected Portal</h4>
+                            <p>A 4-digit PIN locks your parent dashboard. Children cannot access settings, logs, or billing.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#fff7ed; color:#c2410c">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                        <div>
+                            <h4>Kid-Safe AI Filtering</h4>
+                            <p>Every AI response is filtered against violent, political and adult topics before reaching your child.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#f5f3ff; color:#7c3aed">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Screen Time Controls</h4>
+                            <p>Set a daily limit: 15, 30, 45 minutes or unlimited. App locks itself when the limit is reached.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#fdf2f8; color:#be185d">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div>
+                            <h4>Zero Data Selling</h4>
+                            <p>We never sell, share or monetize your child's data. Period. Strict privacy, always.</p>
+                        </div>
+                    </div>
+                    <div class="safety-item">
+                        <div class="safety-icon" style="background:#f0fdf4; color:#15803d">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h4>Daily Progress Reports</h4>
+                            <p>Get automated daily summaries of what your child learned, earned, and asked about.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parents-visual">
+                <div class="portal-mockup">
+                    <div class="portal-header">
+                        <span>🔒</span> Parent Portal
+                        <span class="portal-badge">SECURE</span>
+                    </div>
+                    <div class="portal-stat-row">
+                        <div class="portal-stat">
+                            <div class="ps-icon">⏱️</div>
+                            <div class="ps-num">27 min</div>
+                            <div class="ps-lab">Today</div>
+                        </div>
+                        <div class="portal-stat">
+                            <div class="ps-icon">❓</div>
+                            <div class="ps-num">14</div>
+                            <div class="ps-lab">Questions</div>
+                        </div>
+                        <div class="portal-stat">
+                            <div class="ps-icon">⭐</div>
+                            <div class="ps-num">350 XP</div>
+                            <div class="ps-lab">Earned</div>
+                        </div>
+                    </div>
+                    <div class="portal-mood-section">
+                        <div class="pm-label">Today's Learning Mood</div>
+                        <div class="pm-bars">
+                            <div class="pm-bar-item">
+                                <span>😄</span>
+                                <div class="pm-bar-track"><div class="pm-bar-fill" style="width:70%;background:#22c55e"></div></div>
+                                <span class="pm-pct">70%</span>
+                            </div>
+                            <div class="pm-bar-item">
+                                <span>🤔</span>
+                                <div class="pm-bar-track"><div class="pm-bar-fill" style="width:20%;background:#3b82f6"></div></div>
+                                <span class="pm-pct">20%</span>
+                            </div>
+                            <div class="pm-bar-item">
+                                <span>😤</span>
+                                <div class="pm-bar-track"><div class="pm-bar-fill" style="width:10%;background:#ef4444"></div></div>
+                                <span class="pm-pct">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portal-badges">
+                        <div class="pb-label">Recent Badges Earned</div>
+                        <div class="pb-icons">🔍 🪄 💰 ⭐</div>
+                    </div>
+                    <div class="portal-safe-row">
+                        <i class="fas fa-shield-alt" style="color:#22c55e"></i>
+                        <span>Kid-Safe AI Active</span>
+                        <span class="portal-on">ON</span>
+                    </div>
+                </div>
+
+                <div class="safety-badges-row">
+                    <div class="safety-badge-pill"><i class="fas fa-check-circle"></i> COPPA Compliant</div>
+                    <div class="safety-badge-pill"><i class="fas fa-check-circle"></i> GDPR-K Safe</div>
+                    <div class="safety-badge-pill"><i class="fas fa-check-circle"></i> No Ads Ever</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EMOTIONAL SECTION ===== -->
+<section class="emotion-section section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">💛 The Feeling That Matters Most</span>
+            <h2>From First Question<br>to <span class="text-gradient">First Achievement</span></h2>
+        </div>
+        <div class="emotion-timeline">
+            <div class="et-step">
+                <div class="et-icon">🌱</div>
+                <div class="et-line"></div>
+                <div class="et-info">
+                    <h4>Day 1: "I don't know…"</h4>
+                    <p>Your child asks their first question. The character responds with warmth, patience, and a little emoji magic.</p>
+                </div>
+            </div>
+            <div class="et-step">
+                <div class="et-icon">🔥</div>
+                <div class="et-line"></div>
+                <div class="et-info">
+                    <h4>Week 2: "I have a streak!"</h4>
+                    <p>They're logging in every day voluntarily. Not because they have to — because they genuinely want to.</p>
+                </div>
+            </div>
+            <div class="et-step">
+                <div class="et-icon">🏆</div>
+                <div class="et-line"></div>
+                <div class="et-info">
+                    <h4>Week 3: "I got a badge!"</h4>
+                    <p>They unlock the "Quiz Wizard" sticker and can't stop showing it to you. That pride is real learning confidence.</p>
+                </div>
+            </div>
+            <div class="et-step">
+                <div class="et-icon">🎓</div>
+                <div class="et-line last"></div>
+                <div class="et-info">
+                    <h4>Day 30: "Can we print my certificate?"</h4>
+                    <p>A real, beautifully designed certificate with your child's name on it. Print it. Frame it. They earned it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cert-preview">
+            <div class="cert-inner">
+                <div class="cert-top-stars">⭐⭐⭐⭐⭐</div>
+                <div class="cert-title-icon">🎓</div>
+                <h3 class="cert-headline">Certificate of Achievement</h3>
+                <p class="cert-sub">This award is proudly presented to</p>
+                <div class="cert-name">Your Child's Name</div>
+                <p class="cert-body">For successfully completing the <strong>History Adventure</strong> path and showing incredible curiosity and brilliance in learning!</p>
+                <div class="cert-footer-row">
+                    <div class="cert-sig"><div class="cert-line"></div><p>Your Teacher</p></div>
+                    <div class="cert-sig"><div class="cert-line"></div><p>Date</p></div>
+                </div>
+                <div class="cert-bottom-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">💬 What Parents Say</span>
+            <h2>Real Stories from<br><span class="text-gradient">Real Families</span></h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testi-quote">"My 6-year-old asks to use it before bed every night. Professor Dino is his BEST FRIEND now. He knows more about Ancient Egypt than I do!"</p>
+                <div class="testi-author">
+                    <span class="testi-avatar">👩‍🦱</span>
+                    <div>
+                        <strong>Sarah M.</strong>
+                        <span>Mom of 6-year-old</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card featured-testi">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testi-quote">"The parental gate and PIN system actually made me trust this app immediately. My daughter loves Starry Alien — she now wants to be an astronaut!"</p>
+                <div class="testi-author">
+                    <span class="testi-avatar">👨</span>
+                    <div>
+                        <strong>David K.</strong>
+                        <span>Dad of 9-year-old</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testi-quote">"We printed her certificate when she finished the 30-day path. She cried happy tears. That moment alone was worth everything."</p>
+                <div class="testi-author">
+                    <span class="testi-avatar">👩</span>
+                    <div>
+                        <strong>Amina R.</strong>
+                        <span>Mom of 8-year-old</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRICING SECTION ===== -->
+<section id="pricing" class="pricing-section section-pad">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">💳 Simple Pricing</span>
+            <h2>Start Free.<br><span class="text-gradient">Grow With Premium.</span></h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="price-tier">Free</div>
+                <div class="price-amount">$0 <span>/forever</span></div>
+                <div class="price-desc">Perfect for trying out the magic</div>
+                <ul class="price-features">
+                    <li><i class="fas fa-check"></i> Professor Dino (History)</li>
+                    <li><i class="fas fa-check"></i> 5 Questions per day</li>
+                    <li><i class="fas fa-check"></i> Daily gift</li>
+                    <li><i class="fas fa-check"></i> Basic sticker book</li>
+                    <li><i class="fas fa-check"></i> Kid-safe AI</li>
+                    <li class="price-no"><i class="fas fa-times"></i> All 5 teachers</li>
+                    <li class="price-no"><i class="fas fa-times"></i> Unlimited questions</li>
+                    <li class="price-no"><i class="fas fa-times"></i> Certificates</li>
+                    <li class="price-no"><i class="fas fa-times"></i> Parent portal</li>
+                </ul>
+                <a href="../2nd gemini app.html" class="btn-price-free">Start Free →</a>
+            </div>
+            <div class="price-card price-premium">
+                <div class="price-popular-badge">👑 MOST POPULAR</div>
+                <div class="price-tier">Premium</div>
+                <div class="price-amount">$4.99 <span>/month</span></div>
+                <div class="price-desc">The full magical learning universe</div>
+                <ul class="price-features">
+                    <li><i class="fas fa-check"></i> ALL 5 AI teachers</li>
+                    <li><i class="fas fa-check"></i> Unlimited questions daily</li>
+                    <li><i class="fas fa-check"></i> Daily coin rewards</li>
+                    <li><i class="fas fa-check"></i> Full sticker book</li>
+                    <li><i class="fas fa-check"></i> Printable certificates</li>
+                    <li><i class="fas fa-check"></i> Parent portal & reports</li>
+                    <li><i class="fas fa-check"></i> Screen time controls</li>
+                    <li><i class="fas fa-check"></i> Adventure Map (30 days)</li>
+                    <li><i class="fas fa-check"></i> Priority AI processing</li>
+                </ul>
+                <a href="../2nd gemini app.html" class="btn-price-premium">Upgrade Now ✨</a>
+                <p class="price-cancel">Cancel anytime. No commitment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta-section section-pad">
+    <div class="container">
+        <div class="final-cta-box">
+            <div class="final-chars">🦖 🐵 👾 🐱 🐝</div>
+            <h2>Your Child's Learning Adventure<br>Starts Today</h2>
+            <p>Join <strong>50,000+</strong> kids who learn, laugh, and grow with AI Tutor every day.</p>
+            <div class="final-btns">
+                <a href="../2nd gemini app.html" class="btn-hero-primary">
+                    <i class="fas fa-rocket"></i> Open App Free
+                </a>
+                <a href="#demo" class="btn-hero-ghost-dark">
+                    <i class="fas fa-play-circle"></i> Try Demo First
+                </a>
+            </div>
+            <div class="final-safe-row">
+                <span><i class="fas fa-shield-alt" style="color:#22c55e"></i> 100% Safe for Kids</span>
+                <span><i class="fas fa-star" style="color:#fbbf24"></i> 4.9/5 Rating</span>
+                <span><i class="fas fa-infinity" style="color:#818cf8"></i> Free Forever Plan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">🎓 AI <span>Tutor</span></div>
+                <p>The magical AI learning universe for kids aged 4–13.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>App</h4>
+                <a href="../2nd gemini app.html">Open App</a>
+                <a href="#features">Features</a>
+                <a href="#characters">Teachers</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="footer-links">
+                <h4>Parents</h4>
+                <a href="#parents">Safety Features</a>
+                <a href="#parents">Parent Portal</a>
+                <a href="#parents">COPPA Info</a>
+                <a href="#parents">Privacy Policy</a>
+            </div>
+            <div class="footer-links">
+                <h4>Learn</h4>
+                <a href="#adventure">Adventure Map</a>
+                <a href="#demo">Mini Demo</a>
+                <a href="#features">Certificates</a>
+                <a href="#features">Story Mode</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AI Tutor. All rights reserved. &nbsp;|&nbsp; Kid-Safe AI &nbsp;·&nbsp; No Ads &nbsp;·&nbsp; No Data Sold</p>
+            <div class="footer-safe-badges">
+                <span><i class="fas fa-shield-alt"></i> COPPA</span>
+                <span><i class="fas fa-shield-alt"></i> GDPR-K</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
