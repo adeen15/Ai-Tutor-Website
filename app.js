@@ -214,6 +214,9 @@ function selectDemoChar(key) {
     document.getElementById('demoComplete').style.display = 'none';
     document.getElementById('demoOptions').style.display = 'flex';
 
+    if (window.refreshThreeCharacters) {
+        window.refreshThreeCharacters('demoCharIcon', key);
+    }
     updateDemoHUD();
     loadDemoQuestion();
 }
