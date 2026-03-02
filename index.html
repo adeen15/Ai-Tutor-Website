@@ -11,15 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-        }
-      }
-    </script>
-    <script type="module" src="three-characters.js"></script>
 </head>
 <body>
 
@@ -86,7 +77,7 @@
         <div class="hero-universe" id="heroUniverse">
             <div class="universe-core" id="universeCore">
                 <div class="char-glow-ring"></div>
-                <div class="hero-char-display" id="heroCharDisplay" data-three-char="dino"></div>
+                <div class="hero-char-display" id="heroCharDisplay">🦖</div>
                 <div class="char-shadow"></div>
                 <div class="char-orbit-ring">
                     <span class="orbit-char oc-1">🐵</span>
@@ -174,7 +165,7 @@
             <div class="char-card" data-accent="#f59e0b" data-char="dino" style="--card-accent: #f59e0b; --card-bg: linear-gradient(135deg, #fff9c4, #ffecb3)">
                 <div class="char-card-glow"></div>
                 <div class="char-emoji-wrap">
-                <div class="char-emoji" data-three-char="dino"></div>
+                    <div class="char-emoji">🦖</div>
                     <div class="char-orbit-mini">
                         <span>📚</span><span>🏛️</span><span>🗺️</span>
                     </div>
@@ -198,7 +189,7 @@
             <div class="char-card" data-accent="#0369a1" data-char="milo" style="--card-accent: #0369a1; --card-bg: linear-gradient(135deg, #e0f2fe, #bae6fd)">
                 <div class="char-card-glow"></div>
                 <div class="char-emoji-wrap">
-                <div class="char-emoji" data-three-char="milo"></div>
+                    <div class="char-emoji">🐵</div>
                     <div class="char-orbit-mini">
                         <span>🍌</span><span>➕</span><span>🔢</span>
                     </div>
@@ -223,7 +214,7 @@
                 <div class="char-card-glow"></div>
                 <div class="char-featured-badge">⭐ POPULAR</div>
                 <div class="char-emoji-wrap">
-                <div class="char-emoji" data-three-char="alien"></div>
+                    <div class="char-emoji">👾</div>
                     <div class="char-orbit-mini">
                         <span>🪐</span><span>🛸</span><span>🌌</span>
                     </div>
@@ -247,7 +238,7 @@
             <div class="char-card" data-accent="#db2777" data-char="cat" style="--card-accent: #db2777; --card-bg: linear-gradient(135deg, #fce7f3, #fbcfe8)">
                 <div class="char-card-glow"></div>
                 <div class="char-emoji-wrap">
-                <div class="char-emoji" data-three-char="cat"></div>
+                    <div class="char-emoji">🐱</div>
                     <div class="char-orbit-mini">
                         <span>🧪</span><span>🧲</span><span>⚗️</span>
                     </div>
@@ -271,7 +262,7 @@
             <div class="char-card" data-accent="#854d0e" data-char="bee" style="--card-accent: #854d0e; --card-bg: linear-gradient(135deg, #fef9c3, #fef08a)">
                 <div class="char-card-glow"></div>
                 <div class="char-emoji-wrap">
-                <div class="char-emoji" data-three-char="bee"></div>
+                    <div class="char-emoji">🐝</div>
                     <div class="char-orbit-mini">
                         <span>🌸</span><span>🍯</span><span>🌳</span>
                     </div>
@@ -340,7 +331,7 @@
             </div>
 
             <div class="demo-char-speaking">
-                <div class="demo-char-icon" id="demoCharIcon" data-three-char="dino"></div>
+                <div class="demo-char-icon" id="demoCharIcon">🦖</div>
                 <div class="demo-speech-bubble" id="demoSpeechBubble">
                     <span class="demo-char-name-tag" id="demoCharNameTag">Professor Dino says:</span>
                     <p id="demoQuestion">Who built the famous Great Pyramids?</p>
