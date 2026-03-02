@@ -194,6 +194,7 @@ let currentCharKey = 'dino';
 let currentQIndex = 0;
 let demoCoins = 0;
 let demoXP = 0;
+let demoStreak = 1;
 let totalEarnedCoins = 0;
 let answered = false;
 
@@ -202,6 +203,7 @@ function selectDemoChar(key) {
     currentQIndex = 0;
     demoCoins = 0;
     demoXP = 0;
+    demoStreak = 1;
     totalEarnedCoins = 0;
     answered = false;
 
@@ -221,6 +223,7 @@ function selectDemoChar(key) {
 function updateDemoHUD() {
     document.getElementById('demoCoins').textContent = demoCoins;
     document.getElementById('demoXP').textContent = demoXP;
+    document.getElementById('demoStreak').textContent = demoStreak;
     document.getElementById('demoQNum').textContent = currentQIndex + 1;
 }
 
@@ -270,6 +273,13 @@ function checkDemoAnswer(btn, chosenIdx) {
 
     const coinsEarned = isCorrect ? 20 : 5;
     const xpEarned = isCorrect ? 10 : 2;
+    
+    if (isCorrect) {
+        demoStreak++;
+    } else {
+        demoStreak = 1; // Or 0? Usually resets to 1 in this app
+    }
+
     demoCoins += coinsEarned;
     demoXP += xpEarned;
     totalEarnedCoins += coinsEarned;
