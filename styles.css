@@ -416,3 +416,154 @@ h1, h2, h3, h4 { font-family: 'Fredoka One', cursive; line-height: 1.2; }
     .adv-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 12px; }
 }
 
+
+/* ===================================================================
+   NEW STYLES — Added to match all app features (do not remove above)
+   =================================================================== */
+
+/* ----- Social & Community Section ----- */
+.social-section {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+}
+.social-section .section-header p { color: rgba(255,255,255,0.75); }
+.social-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.social-feat-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 2rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+.social-feat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.13);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+    border-color: rgba(255,255,255,0.3);
+}
+.social-feat-card.featured-social {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-12px);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+}
+.social-feat-card.featured-social:hover {
+    transform: translateY(-20px);
+}
+.social-feat-icon {
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+}
+.social-feat-card h3 {
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.social-feat-card p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+.social-feat-tag {
+    display: inline-flex;
+    margin-top: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.4rem 1rem;
+    border-radius: 99px;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ----- Multilingual Section ----- */
+.multilingual-section { background: #f8faff; }
+.lang-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.lang-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 99px;
+    padding: 0.6rem 1.4rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #334155;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
+    cursor: default;
+    user-select: none;
+}
+.lang-pill:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(99,102,241,0.18);
+}
+.lang-pill-more {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff !important;
+    border-color: transparent !important;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.35) !important;
+}
+.lang-pill-more:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 28px rgba(99,102,241,0.4) !important;
+}
+
+/* ----- Pricing: Trial Badge & "Price More" item ----- */
+.price-badge-trial {
+    display: inline-block;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.3rem 0.9rem;
+    border-radius: 99px;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 12px rgba(34,197,94,0.35);
+}
+.price-features .price-more {
+    color: #6366f1;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 0.4rem;
+    font-size: 0.88rem;
+}
+.price-features .price-more i { color: #6366f1; }
+.price-features li { font-size: 0.88rem; }
+
+/* ----- Responsive: Social & Language sections ----- */
+@media (max-width: 960px) {
+    .social-cards-grid { grid-template-columns: 1fr 1fr; }
+    .social-feat-card.featured-social { transform: none; }
+}
+@media (max-width: 640px) {
+    .social-cards-grid { grid-template-columns: 1fr; }
+    .social-feat-card.featured-social { transform: none; }
+    .lang-strip { gap: 0.6rem; }
+    .lang-pill { font-size: 0.82rem; padding: 0.5rem 1rem; }
+}
